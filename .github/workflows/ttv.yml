@@ -1,16 +1,11 @@
 name: my tvbox
 
 on:
- push:
-   branches:
-     - master
-     - "feature/*"
-   tags:
-     - "v*.*.*"
- pull_request:
-   branches:
-     - master
-     - "feature/*"
+#  push:
+#    branches:
+#      - main
+#  pull_request:
+  workflow_dispatch:
 
 jobs:
  apk:
